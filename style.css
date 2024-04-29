@@ -208,7 +208,7 @@ body .popup #share2 {
     height: 59px;
     width: 90%;
     background-color: var(--dark-gblue);
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-around;
     position: absolute;
