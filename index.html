@@ -1,76 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Article preview component</title>
 
-  <title>Frontend Mentor | Article preview component</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 14px;
+        text-align: center;
+      }
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 14px;
-      text-align: center;
-    }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Manrope" />
+  </head>
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.google.com/specimen/Manrope">
-</head>
+  <body>
+    <div id="container">
+      <div id="drawers"></div>
 
-<body>
-  <div id="container">
-    <div id="drawers"></div>
+      <div id="article">
+        <h3 id="heading">
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h3>
 
-    <div id="article">
-      <h3 id="heading">
-        Shift the overall look and feel by adding these wonderful
-        touches to furniture in your home</h3>
+        <p id="para" class="attribution">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I have got some simple tips to help
+          you make any room feel complete.
+        </p>
+        <div id="footer">
+          <div id="namebox">
+            <img id="avatar" src="images\avatar-michelle.jpg" alt="avatar" />
+            <div id="namedate">
+              <span class="name">Michelle Appleton</span>
+              <span class="date">28 Jun 2020</span>
+            </div>
+          </div>
 
-      <p id="para" class="attribution">Ever been in a room and felt like something was missing? Perhaps
-        it felt slightly bare and uninviting. I have got some simple tips
-        to help you make any room feel complete.</p>
-      <div id="footer">
-        <div id="namebox">
-          <img id="avatar" src="images\avatar-michelle.jpg" alt="avatar">
-          <div id="namedate"><span class="name">Michelle Appleton</span>
-            <span class="date">28 Jun 2020</span>
+          <div id="share">
+            <img src="images\icon-share.svg" alt="share" />
           </div>
         </div>
-
-        <div id="share">
-          <img src="images\icon-share.svg" alt="share">
-        </div>
       </div>
+      <div class="popup">
+        <span>share</span>
 
+        <img id="fb" src="images\icon-facebook.svg" alt="fb" />
+        <img id="tw" src="images\icon-twitter.svg" alt="twt" />
+        <img id="pin" src="images\icon-pinterest.svg" alt="pin" />
+      </div>
     </div>
-   
-  </div>
-  
-  <div class="popup popup-active">
-    <span>share</span>
-    
-    <img id="fb" src="images\icon-facebook.svg" alt="fb">
-     <img  id="tw"src="images\icon-twitter.svg" alt="twt">
-     <img id="pin" src="images\icon-pinterest.svg" alt="pin">
-     <div id="share2">
-      <img src="images\icon-share.svg" alt="share">
+
+    <div class="attribution" id="mylink">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/hirashabeer"
+        >Hira Shabeer</a
+      >.
     </div>
-  
-  </div>
-  <div class="attribution" id="mylink">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.frontendmentor.io/profile/hirashabeer">Hira Shabeer</a>.
-  </div>
-  <script src="myScript.js"></script>
-
-</body>
-
+    <script src="myScript.js"></script>
+  </body>
 </html>
