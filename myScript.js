@@ -1,22 +1,7 @@
-const popup = document.querySelectorAll(".popup");
+const popup = document.querySelector(".popup");
 
-const sharebtn = document.querySelectorAll("#share");
-const sharebtn2 = document.querySelectorAll("#share2");
- 
+const sharebtn = document.querySelector("#share");
+
 sharebtn.addEventListener("click", () => {
   popup.classList.toggle("popup-active");
- 
-  
- 
 });
-sharebtn2.addEventListener("click", () => {
-    popup.classList.toggle("popup-active");
-   
-    
-   
-  });
-
-
-
-
-
