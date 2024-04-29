@@ -134,7 +134,7 @@ body {
     line-height: 30px;
     cursor: pointer;
 }
-#popup #share2 {
+.popup #share2 {
     width: 30px;
     height: 30px;
     background-color: var(--gblue);
@@ -144,12 +144,12 @@ body {
     line-height: 30px;
     cursor: pointer;
 }
-body #popup.active {
+.popup-active {
     height: 100px;
     width: 200px;
     clip-path: polygon(0 24%, 100% 23%, 100% 73%, 61% 76%, 50% 100%, 38% 75%, 0 73%);
     background-color: var(--dark-gblue);
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-around;
     position: absolute;
@@ -157,14 +157,14 @@ body #popup.active {
     right: 18%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
-body #popup #share2 {
+body .popup #share2 {
     display: none;
 }
 
- .svg {
-   display: none !important;
+ .popup{
+   display: flex;
 }
-#popup span {
+.popup span {
     text-transform: uppercase;
     color: var(--ddblue);
     
@@ -202,7 +202,7 @@ body #popup #share2 {
 
     }
 
-    body #popup.active {
+    body .popup-active {
         
     
     height: 59px;
@@ -216,7 +216,7 @@ body #popup #share2 {
     right: 15px;
     clip-path: revert;
 }
-body #popup #share2 {
+body .popup #share2 {
     display: inline-block;
     margin-left: 7%;
 }
